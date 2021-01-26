@@ -1,0 +1,42 @@
+version: "2"
+services:
+  postgres:
+    image: postgres
+    volumes:
+      - ./db_init/:/docker-entrypoint-initdb.d/
+    environment:
+      - POSTGRES_PASSWORD=postgres
+  r2rml:
+    image: registry.gitlab.com/um-cds/fair/tools/r2rml:1.0
+    environment:
+      - "DB_JDBC=jdbc:postgresql://dbhost/lsf"
+    links:
+      - postgres:dbhost
+      - graphdb:graphdb
+  notebook:
+    image: jvsoest/fair-jupyter
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./data:/queries/data/
+      - ./notebooks/import.ipynb:/queries/import.ipynb
+      - ./mapping.ttl:/queries/mapping.ttl
+      - ./notebooks/termMapping.ipynb:/queries/termMapping.ipynb
+    links:
+      - postgres:postgres
+      - graphdb:graphdb
+  graphdb:
+    image: jvsoest/graphdb-free:fairstation
+    ports: 
+      - "7200:7200"
+    environment:
+      - GDB_HEAP_SIZE=2g
+      - GDB_MIN_MEM=1g
+      - GDB_MAX_MEM=2g
+networks:
+  default:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet:  192.169.230.1/24
