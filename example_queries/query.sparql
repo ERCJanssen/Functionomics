@@ -1,0 +1,18 @@
+PREFIX sct: <http://snomed.info/sct/>
+PREFIX FO: <https://github.com/ERCJanssen/FunctionomicsOntology/FAIRdata29072020.owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT *
+WHERE {
+    #Find patient objects
+    ?patient rdf:type sct:116154003.
+
+    # Find the gender types for all patients
+    ?patient FO:has_gender ?genderObject.
+    # Lock that genderObject contains instances of snomed code of gender
+    ?genderObject rdf:type sct:365873007.
+    # Find all possible gender types associated with the gender object
+    ?genderObject rdf:type ?genderType.
+    # Filter gender types to only include snomed male and female codes
+	VALUES ?genderType {sct:703118005 sct:703117000}.
+}
