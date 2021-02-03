@@ -23,4 +23,4 @@ Install Docker on your system. Please find the instructions [here](https://docs.
 
 Open the url [http://localhost:7200](http://localhost:7200), select the database `data` in the upper-right menu, and afterwards select "SPARQL" in the left menubar.
 
-Now, copy the SPARQL query **need to fill this** and paste the query in the box. Hit the run button, and check the results.
+Now, copy the SPARQL query from the folder [example_queries](./example_queries) and paste the query in the box. Hit the run button, and check the results.
