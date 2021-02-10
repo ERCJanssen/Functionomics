@@ -1,5 +1,5 @@
 # Functionomics
-A tutorial for FAIR functionomics data. This tutorial belongs to the manuscript titled "**XXXXXXXX**"
+A tutorial for FAIR functionomics data. This tutorial belongs to the manuscript titled "**Operationalizing and digitalization of person centered daily functioning: a case for functionomics**"
 
 ## Prerequisites
 Install Docker on your system. Please find the instructions [here](https://docs.docker.com/get-docker/); but do mind the requirements of docker itself.
