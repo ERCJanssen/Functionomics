@@ -1,0 +1,1590 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://github.com/ERCJanssen/Functionomics/Functionomics17022021.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://github.com/ERCJanssen/Functionomics/Functionomics17022021.owl">
+    <Prefix name="" IRI="https://github.com/ERCJanssen/Functionomics/Functionomics17022021.owl"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Activities_and_participation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Additional_functions_and_sensations_of_the_cardiovascular_and_respiratory_systems"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Additional_sensory_functions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Administrative_statuses"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aerobic_capacity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Age"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#American_Society_of_Anesthesiologists_physical_status_class_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#American_Society_of_Anesthesiologists_physical_status_class_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#American_Society_of_Anesthesiologists_physical_status_class_3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BMI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Body_functions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Clinical_finding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Clinical_history_and_observation_findings"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Complication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Content_of_thought"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Descriptor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dimensionless_unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Discharge_status"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Discharged_from_hospital"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disease"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disorder_by_body_site"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disorder_of_back"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disorder_of_lumbar_disc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disorder_of_lumbar_spine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disorder_of_spinal_region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Disorder_of_vertebral_column"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Education"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Exercise_tolerance_functions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Feminnine_gender"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Finding_of_American_Society_of_Anesthesiologists_physical_status_classification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Finger-floor_distance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Full-time_employment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Functions_of_the_joints_and_bones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Functions_related_to_digestive_system"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Functions_related_to_the_digestive_system"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fusion_of_posterior_lumbar_spine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gender_finding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#General_clinical_state_finding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#General_finding_of_observation_of_patient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HADS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HADS_anxiety_score"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HADS_depression_score"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HRQOL"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#High_level_of_education"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ICF_category"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Identifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Low_level_of_education"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lumbar_post-laminectomie_syndrome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lumbar_spinal_fusion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lumbar_spondylolisthesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Major_life_areas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Masculine_gender"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Measurement_property"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mental_functions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mental_functions_other_specified"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mobility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Movement_control"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Muscle_functions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Muscle_power_functions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Neuromusculoskeletal_and_movement-related_functions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#No"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non-remunerative_employment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Number_of_levels_fused"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Number_of_occurences"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ODI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Operation_on_lumbar_spine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Operative_procedure_on_spinal_structure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PCS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pain_in_body_part"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Part-time_employment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Patient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Patient_encounter_procedure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Post-laminectomy_syndrome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Post_Procedural_Recovery_Status"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Power_of_muscles_of_the_trunk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Procedure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Procedure_by_body_region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Procedure_by_site"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Procedure_on_back"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Procedure_on_spine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Proprioceptive_function"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Qualifier_value"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RAND-36"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Remunerative_employment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Retired"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Seeking_employment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Self-care"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sensation_of_pain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sensory_functions_and_pain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Smoker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sorensen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Specific_mental_functions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Spondylodesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Steep_ramp_test"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Thought_functions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VAS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weight_maintenance_functions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Work_and_employment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Yes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#count_unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#day"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#density_unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#kilogram_per_cubic_meter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#lumbar_and_lumbosacral_fusion_by_lateral_transverse_process_technique"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mILAS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mass_denisty_unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mobility_of_joint_functions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mobility_of_several_joints"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#no"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#perioperative_complication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#power_unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#second"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#time_unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#watt_based_unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#watt_per_kilogram"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#year"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#yes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#100_scale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#52_scale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Acquiring,_keeping_and_terminating_a_job"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Functions_of_the_Cardiovascular,_Haematological,_immunological_and_respiratory_systems"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Looking_after_ones_health,_other_specified"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lookings_after_one&apos;s_health"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Conceptually_related_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Determins"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Functionally_related_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Has_Diagnosis"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Temporally_related_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_ASA_score"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_HRQOL"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_age"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_body_functions"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_date"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_functioning"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_gender"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_identifier"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_level_of_education"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_measurement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_number_of_levels"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_property"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_propterties_of_activities_and_participation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_study_identifier"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_unit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#measured_at"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#undergoes_procedure"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Unit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Value"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Patient1"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Activities_and_participation"/>
+        <Class IRI="#ICF_category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Additional_functions_and_sensations_of_the_cardiovascular_and_respiratory_systems"/>
+        <Class IRI="#Functions_of_the_Cardiovascular,_Haematological,_immunological_and_respiratory_systems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Additional_sensory_functions"/>
+        <Class IRI="#Sensory_functions_and_pain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Administrative_statuses"/>
+        <Class IRI="#Clinical_finding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aerobic_capacity"/>
+        <Class IRI="#Exercise_tolerance_functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Age"/>
+        <Class IRI="#Descriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#American_Society_of_Anesthesiologists_physical_status_class_1"/>
+        <Class IRI="#Finding_of_American_Society_of_Anesthesiologists_physical_status_classification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#American_Society_of_Anesthesiologists_physical_status_class_2"/>
+        <Class IRI="#Finding_of_American_Society_of_Anesthesiologists_physical_status_classification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#American_Society_of_Anesthesiologists_physical_status_class_3"/>
+        <Class IRI="#Finding_of_American_Society_of_Anesthesiologists_physical_status_classification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BMI"/>
+        <Class IRI="#Weight_maintenance_functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Body_functions"/>
+        <Class IRI="#ICF_category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Clinical_history_and_observation_findings"/>
+        <Class IRI="#Clinical_finding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Complication"/>
+        <Class IRI="#Disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Content_of_thought"/>
+        <Class IRI="#Thought_functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Descriptor"/>
+        <Class IRI="#Qualifier_value"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dimensionless_unit"/>
+        <Class IRI="#Unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Discharge_status"/>
+        <Class IRI="#Administrative_statuses"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Discharged_from_hospital"/>
+        <Class IRI="#Discharge_status"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disease"/>
+        <Class IRI="#Clinical_finding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disorder_by_body_site"/>
+        <Class IRI="#Disease"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disorder_of_back"/>
+        <Class IRI="#Disorder_by_body_site"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disorder_of_lumbar_disc"/>
+        <Class IRI="#Disorder_of_lumbar_spine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disorder_of_lumbar_spine"/>
+        <Class IRI="#Disorder_of_vertebral_column"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disorder_of_spinal_region"/>
+        <Class IRI="#Disorder_of_back"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Disorder_of_vertebral_column"/>
+        <Class IRI="#Disorder_of_spinal_region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Education"/>
+        <Class IRI="#Major_life_areas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Exercise_tolerance_functions"/>
+        <Class IRI="#Additional_functions_and_sensations_of_the_cardiovascular_and_respiratory_systems"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Feminnine_gender"/>
+        <Class IRI="#Gender_finding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Finding_of_American_Society_of_Anesthesiologists_physical_status_classification"/>
+        <Class IRI="#General_finding_of_observation_of_patient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Finger-floor_distance"/>
+        <Class IRI="#mobility_of_several_joints"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Full-time_employment"/>
+        <Class IRI="#Remunerative_employment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Functions_of_the_joints_and_bones"/>
+        <Class IRI="#Neuromusculoskeletal_and_movement-related_functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Functions_related_to_digestive_system"/>
+        <Class IRI="#Body_functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Functions_related_to_the_digestive_system"/>
+        <Class IRI="#Functions_related_to_digestive_system"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fusion_of_posterior_lumbar_spine"/>
+        <Class IRI="#Lumbar_spinal_fusion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gender_finding"/>
+        <Class IRI="#General_clinical_state_finding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#General_clinical_state_finding"/>
+        <Class IRI="#Clinical_finding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#General_finding_of_observation_of_patient"/>
+        <Class IRI="#Clinical_history_and_observation_findings"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HADS"/>
+        <Class IRI="#Mental_functions_other_specified"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HADS_anxiety_score"/>
+        <Class IRI="#Scale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HADS_depression_score"/>
+        <Class IRI="#Scale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HRQOL"/>
+        <Class IRI="#Activities_and_participation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#High_level_of_education"/>
+        <Class IRI="#Education"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Identifier"/>
+        <Class IRI="#Measurement_property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Low_level_of_education"/>
+        <Class IRI="#Education"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lumbar_post-laminectomie_syndrome"/>
+        <Class IRI="#Post-laminectomy_syndrome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lumbar_spinal_fusion"/>
+        <Class IRI="#Operation_on_lumbar_spine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lumbar_spondylolisthesis"/>
+        <Class IRI="#Disorder_of_lumbar_spine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Major_life_areas"/>
+        <Class IRI="#Activities_and_participation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Masculine_gender"/>
+        <Class IRI="#Gender_finding"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Measurement_property"/>
+        <Class IRI="#Qualifier_value"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mental_functions"/>
+        <Class IRI="#Body_functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mental_functions_other_specified"/>
+        <Class IRI="#Mental_functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mobility"/>
+        <Class IRI="#Activities_and_participation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Movement_control"/>
+        <Class IRI="#Proprioceptive_function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Muscle_functions"/>
+        <Class IRI="#Neuromusculoskeletal_and_movement-related_functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Muscle_power_functions"/>
+        <Class IRI="#Muscle_functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Neuromusculoskeletal_and_movement-related_functions"/>
+        <Class IRI="#Body_functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#No"/>
+        <Class IRI="#Smoker"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non-remunerative_employment"/>
+        <Class IRI="#Work_and_employment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Number_of_levels_fused"/>
+        <Class IRI="#Number_of_occurences"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Number_of_occurences"/>
+        <Class IRI="#Descriptor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ODI"/>
+        <Class IRI="#Activities_and_participation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Operation_on_lumbar_spine"/>
+        <Class IRI="#Operative_procedure_on_spinal_structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Operative_procedure_on_spinal_structure"/>
+        <Class IRI="#Procedure_on_spine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PCS"/>
+        <Class IRI="#Content_of_thought"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pain"/>
+        <Class IRI="#Sensory_functions_and_pain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pain_in_body_part"/>
+        <Class IRI="#Sensation_of_pain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Part-time_employment"/>
+        <Class IRI="#Remunerative_employment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Patient"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Patient_encounter_procedure"/>
+        <Class IRI="#Procedure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Post-laminectomy_syndrome"/>
+        <Class IRI="#Disorder_of_back"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Post_Procedural_Recovery_Status"/>
+        <Class IRI="#Mobility"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Power_of_muscles_of_the_trunk"/>
+        <Class IRI="#Muscle_power_functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Procedure_by_body_region"/>
+        <Class IRI="#Procedure_by_site"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Procedure_by_site"/>
+        <Class IRI="#Procedure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Procedure_on_back"/>
+        <Class IRI="#Procedure_by_body_region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Procedure_on_spine"/>
+        <Class IRI="#Procedure_on_back"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Proprioceptive_function"/>
+        <Class IRI="#Additional_sensory_functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RAND-36"/>
+        <Class IRI="#HRQOL"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Remunerative_employment"/>
+        <Class IRI="#Work_and_employment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Retired"/>
+        <Class IRI="#Work_and_employment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scale"/>
+        <Class IRI="#Unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Seeking_employment"/>
+        <Class IRI="#Acquiring,_keeping_and_terminating_a_job"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Self-care"/>
+        <Class IRI="#Activities_and_participation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensation_of_pain"/>
+        <Class IRI="#Pain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sensory_functions_and_pain"/>
+        <Class IRI="#Body_functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Smoker"/>
+        <Class IRI="#Looking_after_ones_health,_other_specified"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sorensen"/>
+        <Class IRI="#Power_of_muscles_of_the_trunk"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Specific_mental_functions"/>
+        <Class IRI="#Mental_functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Spondylodesis"/>
+        <Class IRI="#Lumbar_spinal_fusion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Steep_ramp_test"/>
+        <Class IRI="#Aerobic_capacity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Thought_functions"/>
+        <Class IRI="#Specific_mental_functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VAS"/>
+        <Class IRI="#Pain_in_body_part"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Weight_maintenance_functions"/>
+        <Class IRI="#Functions_related_to_the_digestive_system"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Work_and_employment"/>
+        <Class IRI="#Major_life_areas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Yes"/>
+        <Class IRI="#Smoker"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#count_unit"/>
+        <Class IRI="#Dimensionless_unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#day"/>
+        <Class IRI="#time_unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#density_unit"/>
+        <Class IRI="#Unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#kilogram_per_cubic_meter"/>
+        <Class IRI="#mass_denisty_unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#lumbar_and_lumbosacral_fusion_by_lateral_transverse_process_technique"/>
+        <Class IRI="#Lumbar_spinal_fusion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mILAS"/>
+        <Class IRI="#Post_Procedural_Recovery_Status"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mass_denisty_unit"/>
+        <Class IRI="#density_unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mobility_of_joint_functions"/>
+        <Class IRI="#Functions_of_the_joints_and_bones"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mobility_of_several_joints"/>
+        <Class IRI="#mobility_of_joint_functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#no"/>
+        <Class IRI="#perioperative_complication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#perioperative_complication"/>
+        <Class IRI="#Complication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#power_unit"/>
+        <Class IRI="#Unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#second"/>
+        <Class IRI="#time_unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#time_unit"/>
+        <Class IRI="#Unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#watt_based_unit"/>
+        <Class IRI="#power_unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#watt_per_kilogram"/>
+        <Class IRI="#watt_based_unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#year"/>
+        <Class IRI="#time_unit"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#yes"/>
+        <Class IRI="#perioperative_complication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#100_scale"/>
+        <Class IRI="#Scale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#52_scale"/>
+        <Class IRI="#Scale"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Acquiring,_keeping_and_terminating_a_job"/>
+        <Class IRI="#Work_and_employment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Functions_of_the_Cardiovascular,_Haematological,_immunological_and_respiratory_systems"/>
+        <Class IRI="#Body_functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Looking_after_ones_health,_other_specified"/>
+        <Class IRI="#Lookings_after_one&apos;s_health"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Lookings_after_one&apos;s_health"/>
+        <Class IRI="#Self-care"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Determins"/>
+        <ObjectProperty IRI="#Functionally_related_to"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Has_Diagnosis"/>
+        <ObjectProperty IRI="#Conceptually_related_to"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_ASA_score"/>
+        <ObjectProperty IRI="#has_property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_HRQOL"/>
+        <ObjectProperty IRI="#has_property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_age"/>
+        <ObjectProperty IRI="#has_property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_body_functions"/>
+        <ObjectProperty IRI="#has_property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_date"/>
+        <ObjectProperty IRI="#Temporally_related_to"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_functioning"/>
+        <ObjectProperty IRI="#has_property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_gender"/>
+        <ObjectProperty IRI="#has_property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_identifier"/>
+        <ObjectProperty IRI="#Conceptually_related_to"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_level_of_education"/>
+        <ObjectProperty IRI="#has_property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_measurement"/>
+        <ObjectProperty IRI="#Conceptually_related_to"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_number_of_levels"/>
+        <ObjectProperty IRI="#Conceptually_related_to"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_property"/>
+        <ObjectProperty IRI="#Conceptually_related_to"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_propterties_of_activities_and_participation"/>
+        <ObjectProperty IRI="#has_property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_study_identifier"/>
+        <ObjectProperty IRI="#has_identifier"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_unit"/>
+        <ObjectProperty IRI="#has_measurement"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#measured_at"/>
+        <ObjectProperty IRI="#Conceptually_related_to"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#undergoes_procedure"/>
+        <ObjectProperty IRI="#Conceptually_related_to"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Determins"/>
+        <Class IRI="#Disease"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Has_Diagnosis"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_ASA_score"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_HRQOL"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_age"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_body_functions"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_date"/>
+        <Class IRI="#Patient_encounter_procedure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_functioning"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_gender"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_level_of_education"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_number_of_levels"/>
+        <Class IRI="#Lumbar_spinal_fusion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_propterties_of_activities_and_participation"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_study_identifier"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#undergoes_procedure"/>
+        <Class IRI="#Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Determins"/>
+        <Class IRI="#Procedure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Has_Diagnosis"/>
+        <Class IRI="#Disease"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_HRQOL"/>
+        <Class IRI="#HRQOL"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_age"/>
+        <Class IRI="#Age"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_body_functions"/>
+        <Class IRI="#Body_functions"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_date"/>
+        <Class IRI="#time_unit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_gender"/>
+        <Class IRI="#Gender_finding"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_number_of_levels"/>
+        <Class IRI="#Number_of_levels_fused"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_propterties_of_activities_and_participation"/>
+        <Class IRI="#Activities_and_participation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_study_identifier"/>
+        <Class IRI="#Identifier"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_unit"/>
+        <Class IRI="#day"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_unit"/>
+        <Class IRI="#second"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_unit"/>
+        <Class IRI="#year"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#measured_at"/>
+        <Class IRI="#Patient_encounter_procedure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#undergoes_procedure"/>
+        <Class IRI="#Procedure"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Activities_and_participation</IRI>
+        <Literal>http://who.int/icf#d</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Additional_functions_and_sensations_of_the_cardiovascular_and_respiratory_systems</IRI>
+        <Literal>http://who.int/icf#b450-b469</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Additional_sensory_functions</IRI>
+        <Literal>http://who.int/icf#b250-b279</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Administrative_statuses</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/307824009</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Aerobic_capacity</IRI>
+        <Literal>http://who.int/icf#b4551</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Age</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/397669002</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#BMI</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/60621009</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Body_functions</IRI>
+        <Literal>http://who.int/icf#b</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Complication</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/116223007</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Content_of_thought</IRI>
+        <Literal>http://who.int/icf#b1602</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Descriptor</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/272099008</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Dimensionless_unit</IRI>
+        <Literal>http://purl.obolibrary.org/obo/UO_0000186</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Discharge_status</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/309039003</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Discharged_from_hospital</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/183665006</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Disease</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/64572001</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Disorder_by_body_site</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/123946008</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Disorder_of_back</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/33308003</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Disorder_of_lumbar_disc</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/443700006</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Disorder_of_lumbar_spine</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/129139009</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Disorder_of_spinal_region</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/410730009</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Disorder_of_vertebral_column</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/699699005</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Education</IRI>
+        <Literal>http://who.int/icf#d840-d859</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Exercise_tolerance_functions</IRI>
+        <Literal>http://who.int/icf#b455</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Feminnine_gender</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/703118005</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Full-time_employment</IRI>
+        <Literal>http://who.int/icf#d8502</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Functions_of_the_joints_and_bones</IRI>
+        <Literal>http://who.int/icf#b710-b729</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Functions_related_to_digestive_system</IRI>
+        <Literal>http://who.int/icf#b5</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Functions_related_to_the_digestive_system</IRI>
+        <Literal>http://who.int/icf#b510-b539</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Gender_finding</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/365873007</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#General_clinical_state_finding</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/365860008</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#HADS</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/273524006</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#HADS_anxiety_score</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/416619008</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#HADS_depression_score</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/416954004</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#HRQOL</IRI>
+        <Literal>https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&amp;ns=ncit&amp;code=C142570</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Identifier</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/118522005</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Lumbar_post-laminectomie_syndrome</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/202725007</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Lumbar_spondylolisthesis</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/321171000119102</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Major_life_areas</IRI>
+        <Literal>http://who.int/icf#d8</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Masculine_gender</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/703117000</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Mental_functions</IRI>
+        <Literal>http://who.int/icf#b1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Mental_functions_other_specified</IRI>
+        <Literal>http://who.int/icf#b198</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Mobility</IRI>
+        <Literal>http://who.int/icf#d4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Muscle_functions</IRI>
+        <Literal>http://who.int/icf#b730-b749</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Muscle_power_functions</IRI>
+        <Literal>http://who.int/icf#b730</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Neuromusculoskeletal_and_movement-related_functions</IRI>
+        <Literal>http://who.int/icf#b7</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#No</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/373067005</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Non-remunerative_employment</IRI>
+        <Literal>http://who.int/icf#d855</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Number_of_levels_fused</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/260954006</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Number_of_occurences</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/246432004</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#ODI</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/273675001</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Pain</IRI>
+        <Literal>http://who.int/icf#b280-b289</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Pain_in_body_part</IRI>
+        <Literal>http://who.int/icf#b2801</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Part-time_employment</IRI>
+        <Literal>http://who.int/icf#d8501</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Patient</IRI>
+        <Literal xml:lang="en">http://purl.bioontology.org/ontology/SNOMEDCT/116154003</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Post-laminectomy_syndrome</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/27151001</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Post_Procedural_Recovery_Status</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/405178006</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Power_of_muscles_of_the_trunk</IRI>
+        <Literal>http://who.int/icf#b7305</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Proprioceptive_function</IRI>
+        <Literal>http://who.int/icf#b260</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Qualifier_value</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/362981000</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#RAND-36</IRI>
+        <Literal>https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&amp;ns=ncit&amp;code=C113879</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Retired</IRI>
+        <Literal>https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&amp;ns=ncit&amp;code=C78237</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Seeking_employment</IRI>
+        <Literal>http://who.int/icf#d8450</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Self-care</IRI>
+        <Literal>http://who.int/icf#d5</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Sensation_of_pain</IRI>
+        <Literal>http://who.int/icf#b2801</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Sensory_functions_and_pain</IRI>
+        <Literal>http://who.int/icf#b2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Smoker</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/77176002</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Specific_mental_functions</IRI>
+        <Literal>http://who.int/icf#b140-b189</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Thought_functions</IRI>
+        <Literal>http://who.int/icf#b160</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Unit</IRI>
+        <Literal>http://purl.obolibrary.org/obo/UO_0000000</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Weight_maintenance_functions</IRI>
+        <Literal>http://who.int/icf#b530</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Yes</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/373066001</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#count_unit</IRI>
+        <Literal>http://purl.obolibrary.org/obo/UO_0000189</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#day</IRI>
+        <Literal>http://purl.obolibrary.org/obo/UO_0000033</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#density_unit</IRI>
+        <Literal>http://purl.obolibrary.org/obo/UO_0000182</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#kilogram_per_cubic_meter</IRI>
+        <Literal>http://purl.obolibrary.org/obo/UO_0000083</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#mass_denisty_unit</IRI>
+        <Literal>http://purl.obolibrary.org/obo/UO_0000052</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#mobility_of_joint_functions</IRI>
+        <Literal>http://who.int/icf#b710</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#mobility_of_several_joints</IRI>
+        <Literal>http://who.int/icf#b7101</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#perioperative_complication</IRI>
+        <Literal>http://purl.bioontology.org/ontology/SNOMEDCT/738668004</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#power_unit</IRI>
+        <Literal>http://purl.obolibrary.org/obo/UO_0000113</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#second</IRI>
+        <Literal>http://purl.obolibrary.org/obo/UO_0000010</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#time_unit</IRI>
+        <Literal>http://purl.obolibrary.org/obo/UO_0000010</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#watt_based_unit</IRI>
+        <Literal>http://purl.obolibrary.org/obo/UO_1000114</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#year</IRI>
+        <Literal>http://purl.obolibrary.org/obo/UO_0000036</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Functions_of_the_Cardiovascular,_Haematological,_immunological_and_respiratory_systems</IRI>
+        <Literal>http://who.int/icf#b4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Looking_after_ones_health,_other_specified</IRI>
+        <Literal>http://who.int/icf#d5708</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Lookings_after_one&apos;s_health</IRI>
+        <Literal>http://who.int/icf#d570</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
