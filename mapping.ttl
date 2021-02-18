@@ -74,8 +74,7 @@ rr:predicateObjectMap [
 			rr:parent "study_id";	
 		];
         ];
-];
-
+].
 
 ###########################################
 # Add Complications
@@ -96,7 +95,7 @@ rr:predicateObjectMap [
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "Complications/{study_id}";
-        rr:class lsf:Complications, SCTID:738668004;
+        rr:class lsf:Complications, SCTID:385486001;
     ];
     rr:predicateObjectMap [
         rr:predicate rdfs:label;
@@ -139,7 +138,7 @@ rr:predicateObjectMap [
     rr:subjectMap [
         rr:template "LumbarSpinalFusion/{study_id}";
         rr:termType rr:BlankNode;
-        rr:class SCTID:5017200, lsf:LumbarSpinalFusion;
+        rr:class SCTID:50172003, lsf:LumbarSpinalFusion;
  ];
     rr:predicateObjectMap [
         rr:predicate rdfs:subclass;
@@ -160,7 +159,7 @@ rr:predicateObjectMap [
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "NLevels/{study_id}";
-        rr:class lsf:NLevels, SCTID:260954006;
+        rr:class lsf:NumberOfLevelsFused, SCTID:260954006;
     ];
     rr:predicateObjectMap [
         rr:predicate rdfs:label;
@@ -202,7 +201,7 @@ rr:predicateObjectMap [
         rr:predicate uo:has_unit;
         rr:objectMap [
             	rr:column "age"; 
-		rr:datatype uo:years;
+		rr:datatype uo:year;
          ];
     ].
 ###########################################
@@ -240,7 +239,7 @@ rr:predicateObjectMap [
 ###########################################
 <#patient>
     rr:predicateObjectMap [
-        rr:predicate lsf:has_asa;
+        rr:predicate lsf:has_asa_class;
         rr:objectMap [
             rr:parentTriplesMap <#asa>;
 		rr:joinCondition [
@@ -254,7 +253,7 @@ rr:predicateObjectMap [
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "asa/{study_id}";
-        rr:class lsf:asa, SCTID:413347006;
+        rr:class lsf:Finding_of_American_Society_of_Anesthesiologists_physical_status_classification, SCTID:413347006;
     ];
     rr:predicateObjectMap [
         rr:predicate rdfs:label;
@@ -277,13 +276,13 @@ rr:predicateObjectMap [
 			rr:parent "study_id";	
 		];
         ];
- 	].
+ ].
 
 <#Gender> a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "Gender/{study_id}";
-        rr:class lsf:Gender, SCTID:365873007;
+        rr:class lsf:Gender_finding, SCTID:365873007;
     ];
     rr:predicateObjectMap [
         rr:predicate lsf:has_value;
@@ -322,7 +321,12 @@ rr:predicateObjectMap [
 		rr:termType rr:Literal;
 		rr:datatype lsf:patientBodyFunction;
          ];
- ];
+ ].
+
+###########################################
+# Add bmi
+###########################################
+<#bodyFunctions>
     rr:predicateObjectMap [
         rr:predicate rdfs:subclass;
         rr:objectMap [
@@ -332,71 +336,7 @@ rr:predicateObjectMap [
 			rr:parent "study_id";	
 		];
         ];
- ];
-    rr:predicateObjectMap [
-        rr:predicate rdfs:subclass;
-        rr:objectMap [
-            rr:parentTriplesMap <#PowerOfMusclesOfTheTrunk>;
-		rr:joinCondition [
-			rr:child "study_id";
-			rr:parent "study_id";	
-		];
-        ];
- ];
-    rr:predicateObjectMap [
-        rr:predicate rdfs:subclass;
-        rr:objectMap [
-            rr:parentTriplesMap <#ProprioceptiveFunction>;
-		rr:joinCondition [
-			rr:child "study_id";
-			rr:parent "study_id";	
-		];
-        ];
- ];
-    rr:predicateObjectMap [
-        rr:predicate rdfs:subclass;
-        rr:objectMap [
-            rr:parentTriplesMap <#MobilityOfSeveralJoints>;
-		rr:joinCondition [
-			rr:child "study_id";
-			rr:parent "study_id";	
-		];
-        ];
-];
-    rr:predicateObjectMap [
-        rr:predicate rdfs:subclass;
-        rr:objectMap [
-            rr:parentTriplesMap <#AerobicCapacity>;
-		rr:joinCondition [
-			rr:child "study_id";
-			rr:parent "study_id";	
-		];
-        ];
-];
-    rr:predicateObjectMap [
-        rr:predicate rdfs:subclass;
-        rr:objectMap [
-            rr:parentTriplesMap <#MentalHealth>;
-		rr:joinCondition [
-			rr:child "study_id";
-			rr:parent "study_id";	
-		];
-        ];
-];
-    rr:predicateObjectMap [
-        rr:predicate rdfs:subclass;
-        rr:objectMap [
-            rr:parentTriplesMap <#PainInBodyPart>;
-		rr:joinCondition [
-			rr:child "study_id";
-			rr:parent "study_id";	
-		];
-        ];
-    ]. 
-
-###########################################
-# Add bmi
-###########################################
+ ].
 
 <#bmi> a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
@@ -421,6 +361,17 @@ rr:predicateObjectMap [
 ###########################################
 # Add Power of muscles of the trunk
 ###########################################
+<#bodyFunctions>
+    rr:predicateObjectMap [
+        rr:predicate rdfs:subclass;
+        rr:objectMap [
+            rr:parentTriplesMap <#PowerOfMusclesOfTheTrunk>;
+		rr:joinCondition [
+			rr:child "study_id";
+			rr:parent "study_id";	
+		];
+        ];
+ ].
 
 <#PowerOfMusclesOfTheTrunk> a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
@@ -443,6 +394,17 @@ rr:predicateObjectMap [
 ###########################################
 # Add Proprioceptive function
 ###########################################
+<#bodyFunctions>
+    rr:predicateObjectMap [
+        rr:predicate rdfs:subclass;
+        rr:objectMap [
+            rr:parentTriplesMap <#ProprioceptiveFunction>;
+		rr:joinCondition [
+			rr:child "study_id";
+			rr:parent "study_id";	
+		];
+        ];
+ ].
 
 <#ProprioceptiveFunction> a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
@@ -514,6 +476,17 @@ rr:predicateObjectMap [
 ###########################################
 # Add mobility of several joints
 ###########################################
+<#bodyFunctions>
+    rr:predicateObjectMap [
+        rr:predicate rdfs:subclass;
+        rr:objectMap [
+            rr:parentTriplesMap <#MobilityOfSeveralJoints>;
+		rr:joinCondition [
+			rr:child "study_id";
+			rr:parent "study_id";	
+		];
+        ];
+].
 
  <#MobilityOfSeveralJoints> a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
@@ -561,6 +534,17 @@ rr:predicateObjectMap [
 ###########################################
 # Add aerobic capacity
 ###########################################
+<#bodyFunctions>
+    rr:predicateObjectMap [
+        rr:predicate rdfs:subclass;
+        rr:objectMap [
+            rr:parentTriplesMap <#AerobicCapacity>;
+		rr:joinCondition [
+			rr:child "study_id";
+			rr:parent "study_id";	
+		];
+        ];
+].
 
  <#AerobicCapacity> a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
@@ -607,6 +591,17 @@ rr:predicateObjectMap [
 ###########################################
 # Add mental health
 ###########################################
+<#bodyFunctions>
+    rr:predicateObjectMap [
+        rr:predicate rdfs:subclass;
+        rr:objectMap [
+            rr:parentTriplesMap <#MentalHealth>;
+		rr:joinCondition [
+			rr:child "study_id";
+			rr:parent "study_id";	
+		];
+        ];
+].
 
  <#MentalHealth> a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
@@ -723,6 +718,17 @@ rr:predicateObjectMap [
 ###########################################
 # Add pain in body part
 ###########################################
+<#bodyFunctions>
+    rr:predicateObjectMap [
+        rr:predicate rdfs:subclass;
+        rr:objectMap [
+            rr:parentTriplesMap <#PainInBodyPart>;
+		rr:joinCondition [
+			rr:child "study_id";
+			rr:parent "study_id";	
+		];
+        ];
+    ]. 
 
  <#PainInBodyPart> a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
