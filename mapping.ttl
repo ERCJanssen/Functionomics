@@ -1,5 +1,4 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#>.
-@prefix ex: <http://example.com/ns#>.
 @prefix map: <http://mapping.local/>.
 @prefix sty: <http://purl.bioontology.org/ontology/STY/>.
 @prefix sio: <http://semanticscience.org/resource/SIO_>.
@@ -13,7 +12,7 @@
 @prefix skos: <http://www.w3.org/2008/05/skos#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix uo: <http://purl.obolibrary.org/obo/>.
-@prefix lsf: <https://github.com/ERCJanssen/FunctionomicsOntology/FAIRdata29072020.owl#>.
+@prefix lsf: <https://github.com/ERCJanssen/Functionomics/Functionomics17022021.owl#>.
 @prefix SCTID: <http://snomed.info/sct/>.
 @prefix ICF: <https://www.who.int/icf#>.
 
@@ -49,7 +48,6 @@ rr:predicateObjectMap [
         ];
  ].
 
-
 <#Procedure> a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
@@ -77,16 +75,12 @@ rr:predicateObjectMap [
 		];
         ];
 ];
-    rr:predicateObjectMap [
-        rr:predicate lsf:has_postprocedural_recovery_status;
-        rr:objectMap [
-            rr:parentTriplesMap <#PostProceduralRecoveryStatus>;
-		rr:joinCondition [
-			rr:child "study_id";
-			rr:parent "study_id";	
-		];
-        ];
-];
+
+
+###########################################
+# Add Complications
+###########################################
+<#Procedure>
     rr:predicateObjectMap [
         rr:predicate lsf:causes_complication;
         rr:objectMap [
@@ -98,15 +92,11 @@ rr:predicateObjectMap [
         ];
     ]. 
 
-###########################################
-# Add Complications
-###########################################
-
 <#Complications> a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "Complications/{study_id}";
-        rr:class lsf:Complications, SCTID:385486001;
+        rr:class lsf:Complications, SCTID:738668004;
     ];
     rr:predicateObjectMap [
         rr:predicate rdfs:label;
@@ -136,7 +126,7 @@ rr:predicateObjectMap [
         rr:predicate uo:has_unit;
         rr:objectMap [
             	rr:column "los"; 
-		rr:datatype uo:days;
+		rr:datatype uo:day;
          ];
     ].
 
@@ -990,6 +980,17 @@ rr:predicateObjectMap [
 ###########################################
 # Add PostProceduralRecoveryStatus
 ###########################################
+<#Procedure>
+rr:predicateObjectMap [
+        rr:predicate lsf:has_postprocedural_recovery_status;
+        rr:objectMap [
+            rr:parentTriplesMap <#PostProceduralRecoveryStatus>;
+		rr:joinCondition [
+			rr:child "study_id";
+			rr:parent "study_id";	
+		];
+        ];
+].
 
  <#PostProceduralRecoveryStatus> a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
