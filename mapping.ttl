@@ -19,7 +19,7 @@
 ###########################################
 # Add patient
 ###########################################
-<#patient> a rr:TriplesMap;
+map:patient a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "patient/{study_id}";
@@ -36,11 +36,11 @@
 ###########################################
 # Add identifier
 ###########################################
-<#patient>
+map:patient
     rr:predicateObjectMap [
         rr:predicate lsf:has_study_identifier;
         rr:objectMap [
-            rr:parentTriplesMap <#Identifier>;
+            rr:parentTriplesMap map:identifier;
 		rr:joinCondition [
 			rr:child "study_id";
 			rr:parent "study_id";	
@@ -48,7 +48,7 @@
     ];
  ].
 
-<#Identifier> a rr:TriplesMap;
+map:identifier a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "Identifier/{study_id}";
@@ -65,11 +65,11 @@
 ###########################################
 # Add procedure 
 ###########################################
-<#patient>
+map:patient
 rr:predicateObjectMap [
         rr:predicate lsf:has_surgical_procedure;
         rr:objectMap [
-            rr:parentTriplesMap <#Procedure>;
+            rr:parentTriplesMap map:procedure;
 		rr:joinCondition [
 			rr:child "study_id";
 			rr:parent "study_id";	
@@ -77,7 +77,7 @@ rr:predicateObjectMap [
         ];
  ].
 
-<#Procedure> a rr:TriplesMap;
+map:procedure a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "procedure/{study_id}";
@@ -87,7 +87,7 @@ rr:predicateObjectMap [
     rr:predicateObjectMap [
         rr:predicate lsf:has_discharge_day;
         rr:objectMap [
-            rr:parentTriplesMap <#DischargeDay>;
+            rr:parentTriplesMap map:dischargeDay;
 		rr:joinCondition [
 			rr:child "study_id";
 			rr:parent "study_id";	
@@ -97,7 +97,7 @@ rr:predicateObjectMap [
     rr:predicateObjectMap [
         rr:predicate rdfs:subclass;
         rr:objectMap [
-            rr:parentTriplesMap <#LumbarSpinalFusion>;
+            rr:parentTriplesMap map:lumbarSpinalFusion;
 		rr:joinCondition [
 			rr:child "study_id";
 			rr:parent "study_id";	
@@ -108,11 +108,11 @@ rr:predicateObjectMap [
 ###########################################
 # Add Complications
 ###########################################
-<#Procedure>
+map:procedure
     rr:predicateObjectMap [
         rr:predicate lsf:causes_complication;
         rr:objectMap [
-            rr:parentTriplesMap <#Complications>;
+            rr:parentTriplesMap map:complications;
 		rr:joinCondition [
 			rr:child "study_id";
 			rr:parent "study_id";	
@@ -120,7 +120,7 @@ rr:predicateObjectMap [
         ];
     ]. 
 
-<#Complications> a rr:TriplesMap;
+map:complications a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "Complications/{study_id}";
@@ -137,7 +137,7 @@ rr:predicateObjectMap [
 # Add Discharge Day
 ###########################################
 
-<#DischargeDay> a rr:TriplesMap;
+map:dischargeDay a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "DischargeDay/{study_id}";
@@ -162,7 +162,7 @@ rr:predicateObjectMap [
 # Add spinal fusion
 ###########################################
 
-<#LumbarSpinalFusion> a rr:TriplesMap;
+map:lumbarSpinalFusion a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "LumbarSpinalFusion/{study_id}";
@@ -172,7 +172,7 @@ rr:predicateObjectMap [
     rr:predicateObjectMap [
         rr:predicate rdfs:subclass;
         rr:objectMap [
-            rr:parentTriplesMap <#NLevels>;
+            rr:parentTriplesMap map:nLevels;
 		rr:joinCondition [
 			rr:child "study_id";
 			rr:parent "study_id";	
@@ -183,7 +183,7 @@ rr:predicateObjectMap [
 ###########################################
 # Add NLevels
 ###########################################
-<#NLevels> a rr:TriplesMap;
+map:nLevels a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "NLevels/{study_id}";
@@ -200,11 +200,11 @@ rr:predicateObjectMap [
 ###########################################
 # Add PersonalFactors
 ###########################################
-<#patient>
+map:patient
     rr:predicateObjectMap [
         rr:predicate lsf:has_personal_factors;
         rr:objectMap [
-            rr:parentTriplesMap <#PersonalFactors>;
+            rr:parentTriplesMap map:personalFactors;
 		rr:joinCondition [
 			rr:child "study_id";
 			rr:parent "study_id";	
@@ -212,7 +212,7 @@ rr:predicateObjectMap [
         ];
  ].
 
- <#PersonalFactors> a rr:TriplesMap;
+ map:personalFactors a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "PersonalFactors/{study_id}";
@@ -223,11 +223,11 @@ rr:predicateObjectMap [
 ###########################################
 # Add smoking status
 ###########################################
-<#PersonalFactors>
+map:personalFactors
     rr:predicateObjectMap [
         rr:predicate rdfs:subclass;
         rr:objectMap [
-            rr:parentTriplesMap <#SmokingStatus>;
+            rr:parentTriplesMap map:smokingStatus;
 		rr:joinCondition [
 			rr:child "study_id";
 			rr:parent "study_id";	
@@ -235,7 +235,7 @@ rr:predicateObjectMap [
         ];
  ].
 
-<#SmokingStatus> a rr:TriplesMap;
+map:smokingStatus a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "SmokingStatus/{study_id}";
@@ -252,11 +252,11 @@ rr:predicateObjectMap [
 ###########################################
 # Add age
 ###########################################
-<#PersonalFactors>
+map:personalFactors
 rr:predicateObjectMap [
         rr:predicate lsf:has_age;
         rr:objectMap [
-            rr:parentTriplesMap <#age>;
+            rr:parentTriplesMap map:age;
 		rr:joinCondition [
 			rr:child "study_id";
 			rr:parent "study_id";	
@@ -264,7 +264,7 @@ rr:predicateObjectMap [
         ];
  ].
 
-<#age> a rr:TriplesMap;
+map:age a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "age/{study_id}";
@@ -289,11 +289,11 @@ rr:predicateObjectMap [
 ###########################################
 # Add asa
 ###########################################
-<#PersonalFactors>
+map:personalFactors
     rr:predicateObjectMap [
         rr:predicate lsf:has_asa_class;
         rr:objectMap [
-            rr:parentTriplesMap <#asa>;
+            rr:parentTriplesMap map:asa;
 		rr:joinCondition [
 			rr:child "study_id";
 			rr:parent "study_id";	
@@ -301,7 +301,7 @@ rr:predicateObjectMap [
         ];
     ].
 
-<#asa> a rr:TriplesMap;
+map:asa a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "asa/{study_id}";
@@ -318,11 +318,11 @@ rr:predicateObjectMap [
 ###########################################
 # Add Gender
 ###########################################
-<#PersonalFactors>
+map:personalFactors
 rr:predicateObjectMap [
       rr:predicate lsf:has_gender;
       rr:objectMap [
-          rr:parentTriplesMap <#Gender>;
+          rr:parentTriplesMap map:gender;
 		rr:joinCondition [
 			rr:child "study_id";
 			rr:parent "study_id";	
@@ -330,7 +330,7 @@ rr:predicateObjectMap [
         ];
  ].
 
-<#Gender> a rr:TriplesMap;
+map:gender a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "Gender/{study_id}";
@@ -347,11 +347,11 @@ rr:predicateObjectMap [
 ###########################################
 # Add body functions
 ###########################################
-<#patient>
+map:patient
     rr:predicateObjectMap [
         rr:predicate lsf:has_body_function;
         rr:objectMap [
-            rr:parentTriplesMap <#bodyFunctions>;
+            rr:parentTriplesMap map:bodyFunctions;
 		rr:joinCondition [
 			rr:child "study_id";
 			rr:parent "study_id";	
@@ -359,7 +359,7 @@ rr:predicateObjectMap [
         ];
  ].
 
-<#bodyFunctions> a rr:TriplesMap;
+map:bodyFunctions a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf"];
     rr:subjectMap [
         rr:template "bodyFunctions/{study_id}";
@@ -370,11 +370,11 @@ rr:predicateObjectMap [
 ###########################################
 # Add bmi
 ###########################################
-<#bodyFunctions>
+map:bodyFunctions
     rr:predicateObjectMap [
         rr:predicate rdfs:subclass;
         rr:objectMap [
-            rr:parentTriplesMap <#bmi>;
+            rr:parentTriplesMap map:bmi;
 		rr:joinCondition [
 			rr:child "study_id";
 			rr:parent "study_id";	
@@ -382,7 +382,7 @@ rr:predicateObjectMap [
         ];
  ].
 
-<#bmi> a rr:TriplesMap;
+map:bmi a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "bmi/{study_id}";
@@ -406,11 +406,11 @@ rr:predicateObjectMap [
 ###########################################
 # Add Sorensen
 ###########################################
-<#bodyFunctions>
+map:bodyFunctions
     rr:predicateObjectMap [
         rr:predicate rdfs:subclass;
         rr:objectMap [
-            rr:parentTriplesMap <#Sorensen>;
+            rr:parentTriplesMap map:sorensen;
 		rr:joinCondition [
 			rr:child "study_id";
 			rr:parent "study_id";	
@@ -418,7 +418,7 @@ rr:predicateObjectMap [
         ];
     ].
 
-<#Sorensen> a rr:TriplesMap;
+map:sorensen a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "sorensen/{study_id}";
@@ -442,11 +442,11 @@ rr:predicateObjectMap [
 ###########################################
 # Add movement control
 ###########################################
-<#bodyFunctions>
+map:bodyFunctions
     rr:predicateObjectMap [
         rr:predicate rdfs:subclass;
         rr:objectMap [
-            rr:parentTriplesMap <#MovementControl>;
+            rr:parentTriplesMap map:movementControl;
 		rr:joinCondition [
 			rr:child "study_id";
 			rr:parent "study_id";	
@@ -454,7 +454,7 @@ rr:predicateObjectMap [
         ];
     ].
 
-<#MovementControl> a rr:TriplesMap;
+map:movementControl a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "MovementControl/{study_id}";
@@ -478,11 +478,11 @@ rr:predicateObjectMap [
 ###########################################
 # Add finger floor distance
 ###########################################
-<#bodyFunctions>
+map:bodyFunctions
     rr:predicateObjectMap [
         rr:predicate rdfs:subclass;
         rr:objectMap [
-            rr:parentTriplesMap <#FingerFloorDistance>;
+            rr:parentTriplesMap map:fingerFloorDistance;
 		rr:joinCondition [
 			rr:child "study_id";
 			rr:parent "study_id";	
@@ -490,7 +490,7 @@ rr:predicateObjectMap [
         ];
     ].
 
-<#FingerFloorDistance> a rr:TriplesMap;
+map:fingerFloorDistance a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "FingerFloorDistance/{study_id}";
@@ -514,11 +514,11 @@ rr:predicateObjectMap [
 ###########################################
 # Add steep ramp test
 ###########################################
-<#bodyFunctions>
+map:bodyFunctions
     rr:predicateObjectMap [
         rr:predicate rdfs:subclass;
         rr:objectMap [
-            rr:parentTriplesMap <#SteepRampTest>;
+            rr:parentTriplesMap map:steepRampTest;
 		rr:joinCondition [
 			rr:child "study_id";
 			rr:parent "study_id";	
@@ -526,7 +526,7 @@ rr:predicateObjectMap [
         ];
     ].
 
-<#SteepRampTest> a rr:TriplesMap;
+map:steepRampTest a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "SteepRampTest/{study_id}";
@@ -550,11 +550,11 @@ rr:predicateObjectMap [
 ###########################################
 # Add pcs
 ###########################################
-<#bodyFunctions>
+map:bodyFunctions
     rr:predicateObjectMap [
         rr:predicate rdfs:subclass;
         rr:objectMap [
-            rr:parentTriplesMap <#pcs>;
+            rr:parentTriplesMap map:pcs;
 		rr:joinCondition [
 			rr:child "study_id";
 			rr:parent "study_id";	
@@ -562,7 +562,7 @@ rr:predicateObjectMap [
         ];
 ].
 
-<#pcs> a rr:TriplesMap;
+map:pcs a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "pcs/{study_id}";
@@ -586,11 +586,11 @@ rr:predicateObjectMap [
 ###########################################
 # Add HADS angst
 ###########################################
-<#bodyFunctions>
+map:bodyFunctions
     rr:predicateObjectMap [
         rr:predicate rdfs:subclass;
         rr:objectMap [
-            rr:parentTriplesMap <#HADSAnxiety>;
+            rr:parentTriplesMap map:HADSAnxiety;
 		rr:joinCondition [
 			rr:child "study_id";
 			rr:parent "study_id";	
@@ -598,7 +598,7 @@ rr:predicateObjectMap [
         ];
 ].
 
-<#HADSAnxiety> a rr:TriplesMap;
+map:HADSAnxiety a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "HADSAnxiety/{study_id}";
@@ -621,11 +621,11 @@ rr:predicateObjectMap [
 ###########################################
 # Add HADS depressie
 ###########################################
-<#bodyFunctions>
+map:bodyFunctions
     rr:predicateObjectMap [
         rr:predicate rdfs:subclass;
         rr:objectMap [
-            rr:parentTriplesMap <#HADSDepression>;
+            rr:parentTriplesMap map:HADSDepression;
 		rr:joinCondition [
 			rr:child "study_id";
 			rr:parent "study_id";	
@@ -633,7 +633,7 @@ rr:predicateObjectMap [
         ];
     ].
 
-<#HADSDepression> a rr:TriplesMap;
+map:HADSDepression a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "HADSDepression/{study_id}";
@@ -657,11 +657,11 @@ rr:predicateObjectMap [
 ###########################################
 # Add vas preop
 ###########################################
-<#bodyFunctions>
+map:bodyFunctions
     rr:predicateObjectMap [
         rr:predicate rdfs:subclass;
         rr:objectMap [
-            rr:parentTriplesMap <#VASpreop>;
+            rr:parentTriplesMap map:VASPreOp;
 		rr:joinCondition [
 			rr:child "study_id";
 			rr:parent "study_id";	
@@ -669,7 +669,7 @@ rr:predicateObjectMap [
         ];
     ].
 
-<#VASpreop> a rr:TriplesMap;
+map:VASPreOp a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "VASpreop/{study_id}";
@@ -692,11 +692,11 @@ rr:predicateObjectMap [
 ###########################################
 # Add vas postop
 ###########################################
-<#bodyFunctions>
+map:bodyFunctions
     rr:predicateObjectMap [
         rr:predicate rdfs:subclass;
         rr:objectMap [
-            rr:parentTriplesMap <#VASpostop>;
+            rr:parentTriplesMap map:VASPostOp;
 		rr:joinCondition [
 			rr:child "study_id";
 			rr:parent "study_id";	
@@ -704,7 +704,7 @@ rr:predicateObjectMap [
         ];
     ].
 
-<#VASpreop> a rr:TriplesMap;
+map:VASPreOp a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "VASpostop/{study_id}";
@@ -728,11 +728,11 @@ rr:predicateObjectMap [
 ###########################################
 # Add activities and participation
 ###########################################
-<#patient>
+map:patient
     rr:predicateObjectMap [
         rr:predicate lsf:has_propterties_of_activities_and_participation;
         rr:objectMap [
-            rr:parentTriplesMap <#ActivitiesAndParticipation>;
+            rr:parentTriplesMap map:activitiesAndParticipation;
 		rr:joinCondition [
 			rr:child "study_id";
 			rr:parent "study_id";	
@@ -740,7 +740,7 @@ rr:predicateObjectMap [
         ];
  ].
 
- <#ActivitiesAndParticipation> a rr:TriplesMap;
+ map:activitiesAndParticipation a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "ActivitiesAndParticipation/{study_id}";
@@ -751,11 +751,11 @@ rr:predicateObjectMap [
 ###########################################
 # Add odi
 ###########################################
-<#ActivitiesAndParticipation>
+map:activitiesAndParticipation
     rr:predicateObjectMap [
         rr:predicate rdfs:subclass;
         rr:objectMap [
-            rr:parentTriplesMap <#odi>;
+            rr:parentTriplesMap map:odi;
 		rr:joinCondition [
 			rr:child "study_id";
 			rr:parent "study_id";	
@@ -763,7 +763,7 @@ rr:predicateObjectMap [
         ];
  ].
 
-<#odi> a rr:TriplesMap;
+map:odi a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "odi/{study_id}";
@@ -787,11 +787,11 @@ rr:predicateObjectMap [
 ###########################################
 # Add SF-36 MCS
 ###########################################
-<#ActivitiesAndParticipation>
+map:activitiesAndParticipation
     rr:predicateObjectMap [
         rr:predicate rdfs:subclass;
         rr:objectMap [
-            rr:parentTriplesMap <#SF36MCS>;
+            rr:parentTriplesMap map:SF36MCS;
 		rr:joinCondition [
 			rr:child "study_id";
 			rr:parent "study_id";	
@@ -799,7 +799,7 @@ rr:predicateObjectMap [
         ];
  ].
 
-<#SF36MCS> a rr:TriplesMap;
+map:SF36MCS a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "SF36MCS/{study_id}";
@@ -822,18 +822,18 @@ rr:predicateObjectMap [
 ###########################################
 # Add SF-36 pcs
 ###########################################
-<#ActivitiesAndParticipation>
+map:activitiesAndParticipation
     rr:predicateObjectMap [
         rr:predicate rdfs:subclass;
         rr:objectMap [
-            rr:parentTriplesMap <#SF36pcs>;
+            rr:parentTriplesMap map:SF36pcs;
 		rr:joinCondition [
 			rr:child "study_id";
 			rr:parent "study_id";	
 		];
         ];
  ].
-<#SF36pcs> a rr:TriplesMap;
+map:SF36pcs a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "SF36pcs/{study_id}";
@@ -857,11 +857,11 @@ rr:predicateObjectMap [
 ###########################################
 # Add PostProceduralRecoveryStatus
 ###########################################
-<#Procedure>
+map:procedure
 rr:predicateObjectMap [
         rr:predicate lsf:has_postprocedural_recovery_status;
         rr:objectMap [
-            rr:parentTriplesMap <#PostProceduralRecoveryStatus>;
+            rr:parentTriplesMap map:postProceduralRecoveryStatus;
 		rr:joinCondition [
 			rr:child "study_id";
 			rr:parent "study_id";	
@@ -869,11 +869,11 @@ rr:predicateObjectMap [
         ];
 ].
 
-<#ActivitiesAndParticipation>
+map:activitiesAndParticipation
     rr:predicateObjectMap [
         rr:predicate rdfs:subclass;
         rr:objectMap [
-            rr:parentTriplesMap <#PostProceduralRecoveryStatus>;
+            rr:parentTriplesMap map:postProceduralRecoveryStatus;
 		rr:joinCondition [
 			rr:child "study_id";
 			rr:parent "study_id";	
@@ -881,7 +881,7 @@ rr:predicateObjectMap [
         ];
  ].
 
- <#PostProceduralRecoveryStatus> a rr:TriplesMap;
+ map:postProceduralRecoveryStatus a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "PostProceduralRecoveryStatus/{study_id}";
@@ -892,11 +892,11 @@ rr:predicateObjectMap [
 ###########################################
 # Add mILAS
 ###########################################
-<#PostProceduralRecoveryStatus>
+map:postProceduralRecoveryStatus
     rr:predicateObjectMap [
         rr:predicate rdfs:subclass;
         rr:objectMap [
-            rr:parentTriplesMap <#mILAS>;
+            rr:parentTriplesMap map:mILAS;
 		rr:joinCondition [
 			rr:child "study_id";
 			rr:parent "study_id";	
@@ -904,7 +904,7 @@ rr:predicateObjectMap [
     ];
 ].
 
-<#mILAS> a rr:TriplesMap;
+map:mILAS a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "MILAS/{study_id}";
@@ -928,11 +928,11 @@ rr:predicateObjectMap [
 ###########################################
 # Add disorder of the back
 ###########################################
-<#patient>
+map:patient
     rr:predicateObjectMap [
         rr:predicate lsf:is_diagnosed_with;
         rr:objectMap [
-            rr:parentTriplesMap <#DisorderOfTheBack>;
+            rr:parentTriplesMap map:disorderOfTheBack;
 		rr:joinCondition [
 			rr:child "study_id";
 			rr:parent "study_id";	
@@ -940,7 +940,7 @@ rr:predicateObjectMap [
     ];
  ].
 
-<#DisorderOfTheBack> a rr:TriplesMap;
+map:disorderOfTheBack a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "DisorderOfTheBack/{study_id}";
@@ -956,7 +956,7 @@ rr:predicateObjectMap [
     rr:predicateObjectMap [
         rr:predicate lsf:Determins;
         rr:objectMap [
-            rr:parentTriplesMap <#Procedure>;
+            rr:parentTriplesMap map:procedure;
 		rr:joinCondition [
 			rr:child "study_id";
 			rr:parent "study_id";	
@@ -967,7 +967,7 @@ rr:predicateObjectMap [
 ###########################################
 # Add surgery date
 ###########################################
-<#Surgery_date> a rr:TriplesMap;
+map:surgeryDate a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "Surgery_date/{study_id}";
@@ -985,7 +985,7 @@ rr:predicateObjectMap [
 # Add discharge date
 ###########################################
 
-<#Discharge_date> a rr:TriplesMap;
+map:dischargeDate a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "Discharge_date/{study_id}";
@@ -1002,7 +1002,7 @@ rr:predicateObjectMap [
 # Add one year follow up date
 ###########################################
 
-<#One_year_follow_up_date> a rr:TriplesMap;
+map:oneYearFollowUpDate a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "One_year_follow_up/{study_id}";
