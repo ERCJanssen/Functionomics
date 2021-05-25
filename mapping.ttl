@@ -704,7 +704,7 @@ map:bodyFunctions
         ];
     ].
 
-map:VASPreOp a rr:TriplesMap;
+map:VASPostOp a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "VASpostop/{study_id}";
