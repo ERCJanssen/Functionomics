@@ -12,7 +12,11 @@
 @prefix skos: <http://www.w3.org/2008/05/skos#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix uo: <http://purl.obolibrary.org/obo/>.
+<<<<<<< HEAD
 @prefix fun: <https://github.com/ERCJanssen/Functionomics/blob/master/Functionomics_18022021.owl#>.  
+=======
+@prefix lsf: <https://github.com/ERCJanssen/Functionomics/Functionomics_18022021.owl#>.   #check if last version
+>>>>>>> parent of c337c34 (Update mapping.ttl)
 @prefix SCTID: <http://snomed.info/sct/>.
 @prefix ICF: <https://www.who.int/icf#>.
 
@@ -23,7 +27,7 @@ map:patient a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "patient/{study_id}";
-        rr:class fun:Patient;
+        rr:class lsf:Patient;
     ];
     rr:predicateObjectMap [
         rr:predicate rdfs:label;
@@ -38,7 +42,7 @@ map:patient a rr:TriplesMap;
 ###########################################
 map:patient
     rr:predicateObjectMap [
-        rr:predicate fun:has_study_identifier;
+        rr:predicate lsf:has_study_identifier;
         rr:objectMap [
             rr:parentTriplesMap map:identifier;
 		rr:joinCondition [
@@ -52,7 +56,7 @@ map:identifier a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "Identifier/{study_id}";
-        rr:class fun:Identifier;
+        rr:class lsf:Identifier;
     ];
     rr:predicateObjectMap [
         rr:predicate rdfs:label;
@@ -67,7 +71,7 @@ map:identifier a rr:TriplesMap;
 ###########################################
 map:patient
 rr:predicateObjectMap [
-        rr:predicate fun:has_surgical_procedure;
+        rr:predicate lsf:has_surgical_procedure;
         rr:objectMap [
             rr:parentTriplesMap map:procedure;
 		rr:joinCondition [
@@ -82,10 +86,10 @@ map:procedure a rr:TriplesMap;
     rr:subjectMap [
         rr:template "procedure/{study_id}";
         rr:termType rr:BlankNode;
-        rr:class fun:Procedure;
+        rr:class lsf:Procedure;
  ];
     rr:predicateObjectMap [
-        rr:predicate fun:has_discharge_day;
+        rr:predicate lsf:has_discharge_day;
         rr:objectMap [
             rr:parentTriplesMap map:dischargeDay;
 		rr:joinCondition [
@@ -110,7 +114,7 @@ map:procedure a rr:TriplesMap;
 ###########################################
 map:procedure
     rr:predicateObjectMap [
-        rr:predicate fun:causes_complication;
+        rr:predicate lsf:causes_complication;
         rr:objectMap [
             rr:parentTriplesMap map:complications;
 		rr:joinCondition [
@@ -124,7 +128,7 @@ map:complications a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "Complications/{study_id}";
-        rr:class fun:perioperative_complication;
+        rr:class lsf:perioperative_complication;
     ];
     rr:predicateObjectMap [
         rr:predicate rdfs:label;
@@ -141,7 +145,7 @@ map:dischargeDay a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "DischargeDay/{study_id}";
-        rr:class fun:Discharged_from_hospital;
+        rr:class lsf:Discharged_from_hospital;
     ];
     rr:predicateObjectMap [
         rr:predicate rdfs:label;
@@ -151,10 +155,10 @@ map:dischargeDay a rr:TriplesMap;
          ];
     ];
     rr:predicateObjectMap [
-        rr:predicate fun:has_unit;
+        rr:predicate lsf:has_unit;
         rr:objectMap [
             	rr:column "los"; 
-		rr:datatype fun:day;
+		rr:datatype lsf:day;
          ];
     ].
 
@@ -167,7 +171,7 @@ map:lumbarSpinalFusion a rr:TriplesMap;
     rr:subjectMap [
         rr:template "LumbarSpinalFusion/{study_id}";
         rr:termType rr:BlankNode;
-        rr:class fun:Lumbar_spinal_fusion;
+        rr:class lsf:Lumbar_spinal_fusion;
  ];
     rr:predicateObjectMap [
         rr:predicate rdfs:subclass;
@@ -187,7 +191,7 @@ map:nLevels a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "NLevels/{study_id}";
-        rr:class fun:Number_of_levels_fused;
+        rr:class lsf:Number_of_levels_fused;
     ];
     rr:predicateObjectMap [
         rr:predicate rdfs:label;
@@ -202,7 +206,7 @@ map:nLevels a rr:TriplesMap;
 ###########################################
 map:patient
     rr:predicateObjectMap [
-        rr:predicate fun:has_personal_factors;
+        rr:predicate lsf:has_personal_factors;
         rr:objectMap [
             rr:parentTriplesMap map:personalFactors;
 		rr:joinCondition [
@@ -217,7 +221,7 @@ map:patient
     rr:subjectMap [
         rr:template "PersonalFactors/{study_id}";
 	rr:termType rr:BlankNode;
-        rr:class fun:f._PERSONAL_FACTORS;
+        rr:class lsf:f._PERSONAL_FACTORS;
 ].
 
 ###########################################
@@ -239,7 +243,7 @@ map:smokingStatus a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "SmokingStatus/{study_id}";
-        rr:class fun:Smoker;
+        rr:class lsf:Smoker;
     ];
     rr:predicateObjectMap [
         rr:predicate rdfs:label;
@@ -254,7 +258,7 @@ map:smokingStatus a rr:TriplesMap;
 ###########################################
 map:personalFactors
 rr:predicateObjectMap [
-        rr:predicate fun:has_age;
+        rr:predicate lsf:has_age;
         rr:objectMap [
             rr:parentTriplesMap map:age;
 		rr:joinCondition [
@@ -268,7 +272,7 @@ map:age a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "age/{study_id}";
-        rr:class fun:Age;
+        rr:class lsf:Age;
     ];
     rr:predicateObjectMap [
         rr:predicate rdfs:label;
@@ -278,10 +282,10 @@ map:age a rr:TriplesMap;
          ];
     ];
     rr:predicateObjectMap [
-        rr:predicate fun:has_unit;
+        rr:predicate lsf:has_unit;
         rr:objectMap [
             	rr:column "age"; 
-		rr:datatype fun:year;
+		rr:datatype lsf:year;
          ];
     ].
 
@@ -291,7 +295,7 @@ map:age a rr:TriplesMap;
 ###########################################
 map:personalFactors
     rr:predicateObjectMap [
-        rr:predicate fun:has_asa_class;
+        rr:predicate lsf:has_asa_class;
         rr:objectMap [
             rr:parentTriplesMap map:asa;
 		rr:joinCondition [
@@ -305,7 +309,7 @@ map:asa a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "asa/{study_id}";
-        rr:class fun:Finding_of_American_Society_of_Anesthesiologists_physical_status_classification;
+        rr:class lsf:Finding_of_American_Society_of_Anesthesiologists_physical_status_classification;
     ];
     rr:predicateObjectMap [
         rr:predicate rdfs:label;
@@ -320,7 +324,7 @@ map:asa a rr:TriplesMap;
 ###########################################
 map:personalFactors
 rr:predicateObjectMap [
-      rr:predicate fun:has_gender;
+      rr:predicate lsf:has_gender;
       rr:objectMap [
           rr:parentTriplesMap map:gender;
 		rr:joinCondition [
@@ -334,7 +338,7 @@ map:gender a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "Gender/{study_id}";
-        rr:class fun:Gender_finding;
+        rr:class lsf:Gender_finding;
     ];
     rr:predicateObjectMap [
         rr:predicate rdfs:label;
@@ -349,7 +353,7 @@ map:gender a rr:TriplesMap;
 ###########################################
 map:patient
     rr:predicateObjectMap [
-        rr:predicate fun:has_body_function;
+        rr:predicate lsf:has_body_function;
         rr:objectMap [
             rr:parentTriplesMap map:bodyFunctions;
 		rr:joinCondition [
@@ -364,7 +368,7 @@ map:bodyFunctions a rr:TriplesMap;
     rr:subjectMap [
         rr:template "bodyFunctions/{study_id}";
 	rr:termType rr:BlankNode;
-        rr:class fun:b;
+        rr:class lsf:b;
  ].
 
 ###########################################
@@ -386,7 +390,7 @@ map:bmi a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "bmi/{study_id}";
-        rr:class fun:BMI;
+        rr:class lsf:BMI;
     ];
     rr:predicateObjectMap [
         rr:predicate rdfs:label;
@@ -396,10 +400,10 @@ map:bmi a rr:TriplesMap;
          ];
     ];
     rr:predicateObjectMap [
-        rr:predicate fun:has_unit;
+        rr:predicate lsf:has_unit;
         rr:objectMap [
             	rr:column "bmi"; 
-		rr:datatype fun:kilogram_per_cubic_meter;
+		rr:datatype lsf:kilogram_per_cubic_meter;
          ];
     ].
 
@@ -422,7 +426,7 @@ map:sorensen a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "sorensen/{study_id}";
-        rr:class fun:Sorensen;
+        rr:class lsf:Sorensen;
     ];
     rr:predicateObjectMap [
         rr:predicate rdfs:label;
@@ -432,10 +436,10 @@ map:sorensen a rr:TriplesMap;
          ];
     ];
     rr:predicateObjectMap [
-        rr:predicate fun:has_unit;
+        rr:predicate lsf:has_unit;
         rr:objectMap [
             	rr:column "sorensen"; 
-		rr:datatype fun:second;
+		rr:datatype lsf:second;
          ];
     ].
 
@@ -458,7 +462,7 @@ map:movementControl a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "MovementControl/{study_id}";
-        rr:class fun:Movement_control;
+        rr:class lsf:Movement_control;
     ];
     rr:predicateObjectMap [
         rr:predicate rdfs:label;
@@ -468,10 +472,10 @@ map:movementControl a rr:TriplesMap;
          ];
     ];
     rr:predicateObjectMap [
-        rr:predicate fun:has_unit;
+        rr:predicate lsf:has_unit;
         rr:objectMap [
             	rr:column "motor_control"; 
-		rr:datatype fun:count_unit;
+		rr:datatype lsf:count_unit;
          ];
     ].
 
@@ -494,7 +498,7 @@ map:fingerFloorDistance a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "FingerFloorDistance/{study_id}";
-        rr:class fun:Finger-floor_distance;
+        rr:class lsf:Finger-floor_distance;
     ];
     rr:predicateObjectMap [
         rr:predicate rdfs:label;
@@ -504,10 +508,10 @@ map:fingerFloorDistance a rr:TriplesMap;
          ];
     ];
     rr:predicateObjectMap [
-        rr:predicate fun:has_unit;
+        rr:predicate lsf:has_unit;
         rr:objectMap [
             	rr:column "finger_floor_disctance"; 
-		rr:datatype fun:centimeter;
+		rr:datatype lsf:centimeter;
          ];
     ].
 
@@ -530,7 +534,7 @@ map:steepRampTest a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "SteepRampTest/{study_id}";
-        rr:class fun:Steep_ramp_test;
+        rr:class lsf:Steep_ramp_test;
     ];
     rr:predicateObjectMap [
         rr:predicate rdfs:label;
@@ -540,10 +544,10 @@ map:steepRampTest a rr:TriplesMap;
          ];
     ];
     rr:predicateObjectMap [
-        rr:predicate fun:has_unit;
+        rr:predicate lsf:has_unit;
         rr:objectMap [
             	rr:column "steep_wrpeak_kg"; 
-		rr:datatype fun:watt_per_kilogram;
+		rr:datatype lsf:watt_per_kilogram;
          ];
     ].
 
@@ -566,7 +570,7 @@ map:pcs a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "pcs/{study_id}";
-        rr:class fun:PCS;
+        rr:class lsf:PCS;
     ];
     rr:predicateObjectMap [
         rr:predicate rdfs:label;
@@ -576,10 +580,10 @@ map:pcs a rr:TriplesMap;
          ];
     ];
     rr:predicateObjectMap [
-        rr:predicate fun:has_unit;
+        rr:predicate lsf:has_unit;
         rr:objectMap [
             	rr:column "pcs"; 
-		rr:datatype fun:52_scale;
+		rr:datatype lsf:52_scale;
          ];
     ].
 
@@ -602,7 +606,7 @@ map:HADSAnxiety a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "HADSAnxiety/{study_id}";
-        rr:class fun:HADS_anxiety_score;
+        rr:class lsf:HADS_anxiety_score;
     ];
     rr:predicateObjectMap [
         rr:predicate rdfs:label;
@@ -612,10 +616,10 @@ map:HADSAnxiety a rr:TriplesMap;
          ];
     ];
     rr:predicateObjectMap [
-        rr:predicate fun:has_unit;
+        rr:predicate lsf:has_unit;
         rr:objectMap [
             	rr:column "hads_angst"; 
-		rr:datatype fun:100_scale;
+		rr:datatype lsf:100_scale;
          ];
     ].
 ###########################################
@@ -637,7 +641,7 @@ map:HADSDepression a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "HADSDepression/{study_id}";
-        rr:class fun:HADS_depression_score;
+        rr:class lsf:HADS_depression_score;
     ];
     rr:predicateObjectMap [
         rr:predicate rdfs:label;
@@ -647,10 +651,10 @@ map:HADSDepression a rr:TriplesMap;
          ];
     ];
     rr:predicateObjectMap [
-        rr:predicate fun:has_unit;
+        rr:predicate lsf:has_unit;
         rr:objectMap [
             	rr:column "hads_depressie"; 
-		rr:datatype fun:100_scale;
+		rr:datatype lsf:100_scale;
          ];
     ].
 
@@ -673,7 +677,7 @@ map:VASPreOp a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "VASpreop/{study_id}";
-        rr:class fun:VAS;
+        rr:class lsf:VAS;
     ];
     rr:predicateObjectMap [
         rr:predicate rdfs:label;
@@ -683,10 +687,10 @@ map:VASPreOp a rr:TriplesMap;
          ];
     ];
     rr:predicateObjectMap [
-        rr:predicate fun:has_unit;
+        rr:predicate lsf:has_unit;
         rr:objectMap [
             	rr:column "max_pain"; 
-		rr:datatype fun:100_scale;
+		rr:datatype lsf:100_scale;
          ];
     ].
 ###########################################
@@ -708,7 +712,7 @@ map:VASPreOp a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "VASpostop/{study_id}";
-        rr:class fun:VAS;
+        rr:class lsf:VAS;
     ];
     rr:predicateObjectMap [
         rr:predicate rdfs:label;
@@ -718,10 +722,10 @@ map:VASPreOp a rr:TriplesMap;
          ];
     ];
     rr:predicateObjectMap [
-        rr:predicate fun:has_unit;
+        rr:predicate lsf:has_unit;
         rr:objectMap [
             	rr:column "t1_max_pain"; 
-		rr:datatype fun:100_scale;
+		rr:datatype lsf:100_scale;
          ];
     ].
 
@@ -730,7 +734,7 @@ map:VASPreOp a rr:TriplesMap;
 ###########################################
 map:patient
     rr:predicateObjectMap [
-        rr:predicate fun:has_propterties_of_activities_and_participation;
+        rr:predicate lsf:has_propterties_of_activities_and_participation;
         rr:objectMap [
             rr:parentTriplesMap map:activitiesAndParticipation;
 		rr:joinCondition [
@@ -745,7 +749,7 @@ map:patient
     rr:subjectMap [
         rr:template "ActivitiesAndParticipation/{study_id}";
 	rr:termType rr:BlankNode;
-        rr:class fun:d;
+        rr:class lsf:d;
 ].
 
 ###########################################
@@ -767,7 +771,7 @@ map:odi a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "odi/{study_id}";
-        rr:class fun:ODI;
+        rr:class lsf:ODI;
     ];
     rr:predicateObjectMap [
         rr:predicate rdfs:label;
@@ -777,10 +781,10 @@ map:odi a rr:TriplesMap;
          ];
     ];
     rr:predicateObjectMap [
-        rr:predicate fun:has_unit;
+        rr:predicate lsf:has_unit;
         rr:objectMap [
             	rr:column "odi"; 
-		rr:datatype fun:100_scale;
+		rr:datatype lsf:100_scale;
          ];
     ].
 
@@ -803,7 +807,7 @@ map:SF36MCS a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "SF36MCS/{study_id}";
-        rr:class fun:SF36MCS;
+        rr:class lsf:SF36MCS;
     ];
     rr:predicateObjectMap [
         rr:predicate rdfs:label;
@@ -813,10 +817,10 @@ map:SF36MCS a rr:TriplesMap;
          ];
     ];
     rr:predicateObjectMap [
-        rr:predicate fun:has_unit;
+        rr:predicate lsf:has_unit;
         rr:objectMap [
             	rr:column "mcs1"; 
-		rr:datatype fun:100_scale;
+		rr:datatype lsf:100_scale;
          ];
     ].
 ###########################################
@@ -837,7 +841,7 @@ map:SF36pcs a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "SF36pcs/{study_id}";
-        rr:class fun:SF36PCS;
+        rr:class lsf:SF36PCS;
     ];
     rr:predicateObjectMap [
         rr:predicate rdfs:label;
@@ -847,10 +851,10 @@ map:SF36pcs a rr:TriplesMap;
          ];
     ];
     rr:predicateObjectMap [
-        rr:predicate fun:has_unit;
+        rr:predicate lsf:has_unit;
         rr:objectMap [
             	rr:column "pcs1"; 
-		rr:datatype fun:100_scale;
+		rr:datatype lsf:100_scale;
          ];
     ].
 
@@ -859,7 +863,7 @@ map:SF36pcs a rr:TriplesMap;
 ###########################################
 map:procedure
 rr:predicateObjectMap [
-        rr:predicate fun:has_postprocedural_recovery_status;
+        rr:predicate lsf:has_postprocedural_recovery_status;
         rr:objectMap [
             rr:parentTriplesMap map:postProceduralRecoveryStatus;
 		rr:joinCondition [
@@ -886,7 +890,7 @@ map:activitiesAndParticipation
     rr:subjectMap [
         rr:template "PostProceduralRecoveryStatus/{study_id}";
 	rr:termType rr:BlankNode;
-        rr:class fun:Post_Procedural_Recovery_Status;
+        rr:class lsf:Post_Procedural_Recovery_Status;
 ].
 
 ###########################################
@@ -908,7 +912,7 @@ map:mILAS a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "MILAS/{study_id}";
-        rr:class fun:mILAS;
+        rr:class lsf:mILAS;
     ];
     rr:predicateObjectMap [
         rr:predicate rdfs:label;
@@ -918,10 +922,10 @@ map:mILAS a rr:TriplesMap;
          ];
     ];
     rr:predicateObjectMap [
-        rr:predicate fun:has_unit;
+        rr:predicate lsf:has_unit;
         rr:objectMap [
             	rr:column "milas_0"; 
-		rr:datatype fun:day;
+		rr:datatype lsf:day;
          ];
     ].
 
@@ -930,7 +934,7 @@ map:mILAS a rr:TriplesMap;
 ###########################################
 map:patient
     rr:predicateObjectMap [
-        rr:predicate fun:is_diagnosed_with;
+        rr:predicate lsf:is_diagnosed_with;
         rr:objectMap [
             rr:parentTriplesMap map:disorderOfTheBack;
 		rr:joinCondition [
@@ -944,7 +948,7 @@ map:disorderOfTheBack a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "DisorderOfTheBack/{study_id}";
-        rr:class fun:Disorder_of_back;
+        rr:class lsf:Disorder_of_back;
     ];
     rr:predicateObjectMap [
         rr:predicate rdfs:label;
@@ -954,7 +958,7 @@ map:disorderOfTheBack a rr:TriplesMap;
          ];
  ];
     rr:predicateObjectMap [
-        rr:predicate fun:Determins;
+        rr:predicate lsf:Determins;
         rr:objectMap [
             rr:parentTriplesMap map:procedure;
 		rr:joinCondition [
@@ -971,7 +975,7 @@ map:surgeryDate a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "Surgery_date/{study_id}";
-        rr:class fun:Surgery_date;
+        rr:class lsf:Surgery_date;
     ];
     rr:predicateObjectMap [
         rr:predicate rdfs:label;
@@ -989,7 +993,7 @@ map:dischargeDate a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "Discharge_date/{study_id}";
-        rr:class fun:discharge_date;
+        rr:class lsf:discharge_date;
     ];
     rr:predicateObjectMap [
         rr:predicate rdfs:label;
@@ -1006,7 +1010,7 @@ map:oneYearFollowUpDate a rr:TriplesMap;
     rr:logicalTable [ rr:tableName "lsf" ];
     rr:subjectMap [
         rr:template "One_year_follow_up/{study_id}";
-        rr:class fun:One_year_post_surgery;
+        rr:class lsf:One_year_post_surgery;
     ];
     rr:predicateObjectMap [
         rr:predicate rdfs:label;
