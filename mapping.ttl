@@ -12,9 +12,6 @@
 @prefix skos: <http://www.w3.org/2008/05/skos#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix uo: <http://purl.obolibrary.org/obo/>.
-<<<<<<< HEAD
-@prefix fun: <https://github.com/ERCJanssen/Functionomics/blob/master/Functionomics_18022021.owl#>.  
-=======
 @prefix lsf: <https://github.com/ERCJanssen/Functionomics/Functionomics_18022021.owl#>.   #check if last version
 >>>>>>> parent of c337c34 (Update mapping.ttl)
 @prefix SCTID: <http://snomed.info/sct/>.
