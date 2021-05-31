@@ -254,7 +254,7 @@ map:smokingStatus a rr:TriplesMap;
 ###########################################
 map:personalFactors
 rr:predicateObjectMap [
-        rr:predicate fun:has_age;
+        rr:predicate rdfs:subclass;
         rr:objectMap [
             rr:parentTriplesMap map:age;
 		rr:joinCondition [
@@ -291,7 +291,7 @@ map:age a rr:TriplesMap;
 ###########################################
 map:personalFactors
     rr:predicateObjectMap [
-        rr:predicate fun:has_asa_class;
+        rr:predicate rdfs:subclass;
         rr:objectMap [
             rr:parentTriplesMap map:asa;
 		rr:joinCondition [
@@ -320,7 +320,7 @@ map:asa a rr:TriplesMap;
 ###########################################
 map:personalFactors
 rr:predicateObjectMap [
-      rr:predicate fun:has_gender;
+      rr:predicate rdfs:subclass;
       rr:objectMap [
           rr:parentTriplesMap map:gender;
 		rr:joinCondition [
