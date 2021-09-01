@@ -26,7 +26,8 @@ services:
       - postgres:postgres
       - graphdb:graphdb
   graphdb:
-    image: jvsoest/graphdb-free:fairstation
+    build:
+      context: ./graphdb
     ports: 
       - "7200:7200"
     environment:
